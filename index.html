@@ -11,6 +11,23 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 </style>
 <body>
 
@@ -214,16 +231,31 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact </span>
     
     <div class="w3-mobile">
-      <ul>
-        <br>
-        <li>
-          
-          <button style="font-size:24px">labsxbit@gmail.com <i class="fa fa-envelope" window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=labsxbit@gmail.com'></i></button>
-        </li>
-        <li>
-          <button style="font-size:24px">919625188625 <i class="fa fa-whatsapp" window.location.href = 'https://api.whatsapp.com/send?phone=919625188625'></i></button>
-        </li> 
-      </ul>
+      
+      <table>
+        <tr>
+          <th>Contact </th>
+          <th> Details </th>
+        </tr>
+        <tr>
+          <td>
+            <h2>Email</h2>
+          </td>
+          <td>
+            <button style="font-size:24px">labsxbit@gmail.com <i class="fa fa-envelope" window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=labsxbit@gmail.com'></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2> Phone </h2>
+          </td>
+          <td>
+            <button style="font-size:24px">919625188625 <i class="fa fa-whatsapp" window.location.href = 'https://api.whatsapp.com/send?phone=919625188625'></i></button>
+          </td>
+        </tr>
+      </table>
+        
+      
       
       
 
@@ -265,6 +297,8 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
 
 <script>
+
+  
 // Slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
